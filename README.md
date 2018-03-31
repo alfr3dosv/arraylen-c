@@ -21,8 +21,6 @@ int arraylen(void* array) {
     if (*array_head == INT_MAX) {
         int* array_length = array - sizeof(size_t) - sizeof(int);
         return *array_length;
-    } else {
-        return 0;
     }
     return 0;
 }
